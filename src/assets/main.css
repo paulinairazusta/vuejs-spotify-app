@@ -1,0 +1,12 @@
+@import './base.css';
+
+a {
+  text-decoration: none;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 90px;
+}
