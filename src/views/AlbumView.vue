@@ -41,8 +41,8 @@ onBeforeMount(() => {
         </div>
       </div>
       <div>
-        <ol v-for="track in tracks" :key="track.id">
-          <li class="Track">
+        <ol>
+          <li v-for="track in tracks" :key="track.id" class="Track">
             <p>{{ track.name }}</p>
           </li>
         </ol>

@@ -9,7 +9,7 @@ const props = defineProps<{
 
 <template>
   <router-link :to="{ name: 'Album', query: { id: album.id, image: album.images[0]?.url || '', name: album.name, release_date: album.release_date } }">
-    <div className="Album-card">
+    <div class="Album-card">
       <img :src="props.album?.images[1]?.url ?? avatar" alt="Album avatar" class="Card-image" />
       <p class="Card-name">{{ props.album?.name }}</p>
     </div>

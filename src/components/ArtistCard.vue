@@ -9,7 +9,7 @@ const props = defineProps<{
 
 <template>
   <router-link :to="{ name: 'Artist', params: { id: artist?.id } }">
-    <div className="Card">
+    <div class="Card">
       <img :src="props.artist?.images[2]?.url ?? avatar" alt="Artist avatar" class="Card-image" />
       <p class="Card-name">{{ props.artist?.name }}</p>
       <span v-if="props.artist?.genres[0]" class="Card-tag">{{ props.artist.genres[0] }}</span>
